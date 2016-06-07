@@ -15,7 +15,7 @@
 class vista {
    
     public function cabecero() {
-        require '../bloqueshtml/cabecero.html';
+        require_once  'bloqueshtml/cabecero.html';
     }
     public function metalinks() {
         

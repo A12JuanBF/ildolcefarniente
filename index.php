@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include 'vistas/vista.php';
-$vita=vista();
+$vista=new vista;
 ?>
 <html lang="es">
 <head>
@@ -31,7 +31,7 @@ $vita=vista();
 
 <body class="homepage">
 <?php  
-$vista->cabecero();
+ $vista->cabecero();
 ?>
     
 
