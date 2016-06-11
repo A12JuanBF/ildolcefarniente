@@ -83,7 +83,7 @@ $vista = new vista;
                                     <li><a href="shortcodes.html">Shortcodes</a></li>
                                 </ul>
                             </li>-->
-                            <li ><a href="blog.html">Blog</a></li> 
+                            <li ><a href="blog/">Blog</a></li> 
                             <li ><a href="contact-us.html">Contact</a></li>                        
                         </ul>
                     </div>

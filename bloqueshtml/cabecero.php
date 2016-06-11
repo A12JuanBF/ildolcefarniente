@@ -1,13 +1,20 @@
 <?php
-$directoryURI = $_SERVER['REQUEST_URI'];
-$path = parse_url($directoryURI, PHP_URL_PATH);
-$components = explode('ildolce', $path);
-$first_part = $components[1];
-if ($first_part = "carta") {
-    
+$directoryURI = $_SERVER['PHP_SELF'];
+
+if ($directoryURI == "/ildolce/carta/index.php") {
+
     $carta = "class='active'";
-    $blog = "";
-    $contacto = "";
+    $blog = " ";
+    $contacto = " ";
+} elseif ($directoryURI == "/ildolce/blog/index.php") {
+    $carta = " ";
+    $blog = "class='active'";
+    $contacto = " ";
+}
+elseif ($directoryURI == "/ildolce/contacto/index.php") {
+    $carta = " ";
+    $blog = " ";
+    $contacto = "class='active'";
 }
 
 ?>
@@ -24,7 +31,7 @@ if ($first_part = "carta") {
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            
+
                         </ul>
                         <!-- <div class="search">
                              <form role="form">
@@ -55,7 +62,7 @@ if ($first_part = "carta") {
                     <li ><a href="../">Inicio</a></li>
                     <!--<li><a href="about-us.html">About Us</a></li>-->
                     <!--<li><a href="services.html">Services</a></li>-->
-                    <li <?php echo $carta; ?>><a href="">Carta</a></li>
+                    <li <?php echo $carta; ?>><a href="../carta/">Carta</a></li>
                     <!--<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu">
@@ -65,8 +72,8 @@ if ($first_part = "carta") {
                             <li><a href="shortcodes.html">Shortcodes</a></li>
                         </ul>
                     </li>-->
-                    <li <?php echo $blog; ?>><a href="blog.html">Blog</a></li> 
-                    <li <?php echo $contacto; ?>><a href="contact-us.html">Contact</a></li>                        
+                    <li <?php echo $blog; ?>><a href="../blog/">Blog</a></li> 
+                    <li <?php echo $contacto; ?>><a href="../contacto/">Contacto</a></li>                        
                 </ul>
             </div>
         </div><!--/.container-->
