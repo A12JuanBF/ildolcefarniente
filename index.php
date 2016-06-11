@@ -84,7 +84,7 @@ $vista = new vista;
                                 </ul>
                             </li>-->
                             <li ><a href="blog/">Blog</a></li> 
-                            <li ><a href="contact-us.html">Contact</a></li>                        
+                            <li ><a href="contacto/">Contacto</a></li>                        
                         </ul>
                     </div>
                 </div><!--/.container-->
