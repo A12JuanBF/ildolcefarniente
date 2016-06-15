@@ -54,7 +54,7 @@ elseif ($directoryURI == "/ildolce/contacto/index.php") {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><img src="../images/logo.png" alt="logo"></a>
+                <a style="margin-bottom: 7px;" class="navbar-brand" href="index.php"><img class="img-circle img-responsive" src="../images/logo1.jpg" alt="logo"></a>
             </div>
 
             <div class="collapse navbar-collapse navbar-right">
