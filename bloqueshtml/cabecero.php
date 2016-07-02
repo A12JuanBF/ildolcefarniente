@@ -1,20 +1,26 @@
 <?php
 $directoryURI = $_SERVER['PHP_SELF'];
 
-if ($directoryURI == "/ildolce/carta/index.php") {
+if ($directoryURI == "/carta/index.php") {
 
     $carta = "class='active'";
-    $blog = " ";
+    $galeria = " ";
     $contacto = " ";
-} elseif ($directoryURI == "/ildolce/blog/index.php") {
+} 
+elseif ($directoryURI == "/contacto/index.php") {
     $carta = " ";
-    $blog = "class='active'";
-    $contacto = " ";
-}
-elseif ($directoryURI == "/ildolce/contacto/index.php") {
-    $carta = " ";
-    $blog = " ";
+    $galeria = " ";
     $contacto = "class='active'";
+}
+elseif ($directoryURI == "/galeria/index.php") {
+    $carta = " ";
+    $contacto = " ";
+    $galeria = "class='active'";
+}
+elseif ($directoryURI == "/subscripcion/index.php") {
+    $carta = " ";
+    $contacto = "class='active'";
+    $galeria = " ";
 }
 
 ?>
@@ -22,14 +28,14 @@ elseif ($directoryURI == "/ildolce/contacto/index.php") {
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-xs-4">
-                    <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
+                <div class="col-sm-6 col-xs-5">
+                    <div class="top-number"><p><i class="fa fa-phone-square"></i>  881 125 391</p></div>
                 </div>
-                <div class="col-sm-6 col-xs-8">
+                <div class="col-sm-6 col-xs-7">
                     <div class="social">
                         <ul class="social-share">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/Il-Dolce-Far-Niente-Santiago-1722276494712764"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/ildolcesantiago"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
 
                         </ul>
@@ -49,17 +55,17 @@ elseif ($directoryURI == "/ildolce/contacto/index.php") {
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Menú</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a style="margin-bottom: 7px;" class="navbar-brand" href="index.php"><img class="img-circle img-responsive" src="../images/logo1.jpg" alt="logo"></a>
+                <a style="margin-bottom: 7px;" class="navbar-brand" href="../"><img class="img-circle img-responsive" src="../images/logo1.jpg" alt="logo"></a>
             </div>
 
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li ><a href="../">Inicio</a></li>
+                    <li ><a href="../">Restaurante</a></li>
                     <!--<li><a href="about-us.html">About Us</a></li>-->
                     <!--<li><a href="services.html">Services</a></li>-->
                     <li <?php echo $carta; ?>><a href="../carta/">Carta</a></li>
@@ -72,8 +78,14 @@ elseif ($directoryURI == "/ildolce/contacto/index.php") {
                             <li><a href="shortcodes.html">Shortcodes</a></li>
                         </ul>
                     </li>-->
-                    <li <?php echo $blog; ?>><a href="../blog/">Blog</a></li> 
-                    <li <?php echo $contacto; ?>><a href="../contacto/">Contacto</a></li>                        
+                    <li <?php echo $galeria; ?>><a href="../galeria/">Galeria</a></li> 
+                    <li class="dropdown" <?php echo $contacto; ?>><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contactar <i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li ><a href="../contacto">Contacto</a></li>
+                                    <li><a href="../subscripcion">Subscripción</a></li>
+                                    
+                                </ul>
+                            </li>                        
                 </ul>
             </div>
         </div><!--/.container-->
