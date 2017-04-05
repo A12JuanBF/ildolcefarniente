@@ -59,14 +59,14 @@ jQuery(function($) {
                 form.prepend(form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando mensaje...</p>').fadeIn());
             }
         }).done(function(data) {
-            if(data)
+            if (data)
             {
-            form_status.html('<p class="text-success">Mensaje enviado</p>').delay(3000).fadeOut();
-            
-            document.getElementById("main-contact-form").reset();
+                form_status.html('<p class="text-success">Mensaje enviado</p>').delay(3000).fadeOut();
+
+                document.getElementById("main-contact-form").reset();
             }
-            else{
-             form_status.html('<p class="text-success">Ha ocurrido un error, vuelva a intentarlo.</p>').delay(3000).fadeOut();   
+            else {
+                form_status.html('<p class="text-success">Ha ocurrido un error, vuelva a intentarlo.</p>').delay(3000).fadeOut();
             }
         });
     });
@@ -84,4 +84,19 @@ jQuery(function($) {
     $("a[rel^='prettyPhoto']").prettyPhoto({
         social_tools: false
     });
+    
+    //script cookies
+    $("#aceptar").click(function(e) {
+        e.preventDefault();
+        
+        
+            popbox3();
+        
+    });
+    
+    
+    function popbox3() {
+        $('#overbox3').toggle();
+    }
+     //script cookies
 });

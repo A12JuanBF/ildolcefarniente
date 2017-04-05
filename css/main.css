@@ -2531,8 +2531,43 @@ shortcodes page css
     margin-left: 15px;
 }
 
+.video{
+width:100%;
 
+}
+.videocont{
+    margin-top: 15px;
+}
+video{
+    width: 100%;
+}
 
-
-
-
+/*Estilos mensaje cookies */
+#overbox3 {
+    position: fixed;
+    z-index: 99999;
+    left: 0px;
+    width: 100%;
+    bottom:0em;
+    display: block;
+}
+#infobox3 {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    height: 82px;
+    width: 100%;
+    
+    text-align:center;
+    background-color: #eeeeee;
+}
+#infobox3 p {
+    line-height:18px;
+    font-size:14px;
+    text-align:center;
+}
+#infobox3 p a {
+    margin-right:5px;
+    text-decoration: underline;
+}
+/*Estilos mensaje cookies */

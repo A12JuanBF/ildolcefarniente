@@ -10,7 +10,7 @@ $arrplatos=json_decode($platos->getplatos());
         <img class="img-responsive" src="../img-platos/<?php echo $value->imagen; ?>" alt="<?php echo $value->nombre; ?>" title="<?php echo $value->nombre; ?>">
         <div class="overlay">
             <div class="recent-work-inner">
-                <h3><a href="../img-platos/<?php echo $value->imagen; ?>" rel="prettyPhoto"><?php echo $value->nombre; ?></a></h3>
+                <h3><?php echo $value->nombre; ?></h3>
                 <p><?php echo $value->descripcion; ?></p>
                 <a class="preview" href="../img-platos/<?php echo $value->imagen; ?>" rel="prettyPhoto"><span>Precio: <?php echo $value->precio; ?> <i class="glyphicon glyphicon-euro"></i></span>&nbsp;<i class="fa fa-eye"></i> Ampliar imagen</a>
             </div> 

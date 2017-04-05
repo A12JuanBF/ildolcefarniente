@@ -40,5 +40,8 @@ class vista {
     public function platos() {
         require_once '../bloqueshtml/platos.php';
     }
+    public function tripadvisoropinion() {
+        require_once 'bloqueshtml/opinionestripadvisor.html';
+    }
 
 }

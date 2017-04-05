@@ -46,6 +46,9 @@ $vista = new vista;
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.jpg">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.jpg">
         <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.jpg">
+        
+        <script src="../js/jquery.js"></script>
+        <script src="../js/suscrip.js"></script>
     </head><!--/head-->
 
     <body>
@@ -65,8 +68,8 @@ $vista = new vista;
                     <p class="lead"></p>
                 </div> 
                 <div class="row contact-wrap"> 
-                    <div class="status alert alert-success" style="display: none"></div>
-                    <form id="main-subscripcion" class="contact-form" name="subscripcion">
+                    <div id="mensaje" class="status alert alert-success" style="display: none"></div>
+                    <form id="mainsubscripcion" class="contact-form" name="subscripcion">
                         <div class="col-sm-5">
                             <div class="form-group">
                                 <label>Nombre *</label>
